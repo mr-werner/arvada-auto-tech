@@ -1,29 +1,49 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap");
+/* Arvada Auto Tech palette, taken from the logo (Arvada-Logo.png) and the shop itself:
+   gold  #F5BE1E  logo lettering highlight (sampled ~#F0C020)
+   orange #F0701A logo lettering lower gradient (sampled ~#F07010), also the old site's button orange (#F4511E)
+   maroon #7A1A12 logo diamond shadow / maroon trim on the building
+   charcoal + steel neutrals for the diamond-plate garage look. */
 
 :root {
-  --ink: #1b2127;
-  --ink-2: #252c33;
-  --steel: #c2501a;
-  --accent: #f26a2e;
-  --accent-ink: #1b2127;
-  --accent-hover: #f48554;
-  --accent-deep: #d05b28;
-  --accent-soft: #f8ad8c;
-  --accent-glow: rgba(242, 106, 46, 0.18);
-  --steel-glow: rgba(194, 80, 26, 0.5);
-  --paper: #f4f4f2;
+  --heading-font: "Big Shoulders Display", "Oswald", "Arial Narrow", sans-serif;
+  --body-font: "Barlow", "Helvetica Neue", Arial, sans-serif;
+
+  --ink: #15171a;
+  --ink-2: #1e2125;
+  --steel-3: #2b2f34;
+  --gold: #f5be1e;
+  --orange: #f0701a;
+  --maroon: #7a1a12;
+  --red: #c4291c;
+
+  --steel: #b8520c;          /* orange deepened for text on light backgrounds (5:1 on white) */
+  --accent: #f5be1e;
+  --accent-ink: #15171a;
+  --accent-hover: #ffd34d;
+  --accent-deep: #b8520c;
+  --accent-soft: #f7cf63;
+  --accent-glow: rgba(245, 190, 30, 0.18);
+  --logo-grad: linear-gradient(180deg, #ffe066 0%, #f5be1e 38%, #f0701a 100%);
+
+  --paper: #eeeeec;
   --card: #ffffff;
-  --card-hover: #fef6f2;
-  --muted: #7d8082;
-  --faint: #9da0a1;
-  --label: #494d52;
-  --line: rgba(27, 33, 39, 0.14);
-  --line-light: rgba(255, 255, 255, .16);
-  --header-bg: rgba(27, 33, 39, 0.9);
-  --deep: #121519;
-  --deep-line: #4d5257;
-  --on-dark: #cdcecf;
-  --on-dark-2: #a8abad;
-  --on-dark-strong: #e8e9e9;
+  --card-hover: #fff8e6;
+  --muted: #5e6268;
+  --faint: #8d9095;
+  --label: #3f4348;
+  --line: rgba(21, 23, 26, 0.14);
+  --line-light: rgba(255, 255, 255, .14);
+  --header-bg: rgba(21, 23, 26, 0.94);
+  --deep: #0f1012;
+  --deep-line: #3d4147;
+  --on-dark: #c9cbce;
+  --on-dark-2: #9fa3a8;
+  --on-dark-strong: #eceded;
+
+  /* Signature motif: diamond (tread) plate, drawn as raised lozenges in alternating directions. */
+  --plate: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='36'%3E%3Cg%3E%3Cellipse cx='9' cy='9.8' rx='8' ry='2.1' transform='rotate(-45 9 9.8)' fill='%23000' fill-opacity='.55'/%3E%3Cellipse cx='9' cy='9' rx='8' ry='2.1' transform='rotate(-45 9 9)' fill='%23fff' fill-opacity='.13'/%3E%3Cellipse cx='27' cy='27.8' rx='8' ry='2.1' transform='rotate(-45 27 27.8)' fill='%23000' fill-opacity='.55'/%3E%3Cellipse cx='27' cy='27' rx='8' ry='2.1' transform='rotate(-45 27 27)' fill='%23fff' fill-opacity='.13'/%3E%3Cellipse cx='27' cy='9.8' rx='8' ry='2.1' transform='rotate(45 27 9.8)' fill='%23000' fill-opacity='.55'/%3E%3Cellipse cx='27' cy='9' rx='8' ry='2.1' transform='rotate(45 27 9)' fill='%23fff' fill-opacity='.13'/%3E%3Cellipse cx='9' cy='27.8' rx='8' ry='2.1' transform='rotate(45 9 27.8)' fill='%23000' fill-opacity='.55'/%3E%3Cellipse cx='9' cy='27' rx='8' ry='2.1' transform='rotate(45 9 27)' fill='%23fff' fill-opacity='.13'/%3E%3C/g%3E%3C/svg%3E");
+  --plate-light: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='36'%3E%3Cg%3E%3Cellipse cx='9' cy='9' rx='8' ry='2.1' transform='rotate(-45 9 9)' fill='%2315171a' fill-opacity='.05'/%3E%3Cellipse cx='27' cy='27' rx='8' ry='2.1' transform='rotate(-45 27 27)' fill='%2315171a' fill-opacity='.05'/%3E%3Cellipse cx='27' cy='9' rx='8' ry='2.1' transform='rotate(45 27 9)' fill='%2315171a' fill-opacity='.05'/%3E%3Cellipse cx='9' cy='27' rx='8' ry='2.1' transform='rotate(45 9 27)' fill='%2315171a' fill-opacity='.05'/%3E%3C/g%3E%3C/svg%3E");
+  --steel-sheen: linear-gradient(135deg, #3a3f45 0%, #24272b 35%, #33373c 55%, #1c1e21 100%);
+
   background: var(--paper);
 }
